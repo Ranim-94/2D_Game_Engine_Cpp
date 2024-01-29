@@ -7,7 +7,7 @@
 // local libraries inside libs folder
 #include<glm/glm.hpp> // for handling math on vectors,..
 #include<imgui/imgui.h> // 
-
+#include<sol/sol.hpp> // for binding bewteen C++ and Lua
 
 int main() {
     
