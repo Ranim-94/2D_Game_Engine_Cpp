@@ -1,0 +1,14 @@
+\contentsline {chapter}{\numberline {1}Game Development with C++ and Lua}{7}{chapter.1}%
+\contentsline {section}{\numberline {1.1}Introduction}{7}{section.1.1}%
+\contentsline {section}{\numberline {1.2}Installation and Configuration}{9}{section.1.2}%
+\contentsline {subsection}{\numberline {1.2.1}C/C++}{9}{subsection.1.2.1}%
+\contentsline {subsection}{\numberline {1.2.2}SDL Installation}{9}{subsection.1.2.2}%
+\contentsline {subsection}{\numberline {1.2.3}Lua}{9}{subsection.1.2.3}%
+\contentsline {subsection}{\numberline {1.2.4}Command Exploring directory structure}{9}{subsection.1.2.4}%
+\contentsline {section}{\numberline {1.3}Building}{9}{section.1.3}%
+\contentsline {subsection}{\numberline {1.3.1}Makefile}{9}{subsection.1.3.1}%
+\contentsline {section}{\numberline {1.4}Compiling and testing all dependencies}{10}{section.1.4}%
+\contentsline {subsection}{\numberline {1.4.1}sol and lua libraries}{10}{subsection.1.4.1}%
+\contentsline {subsection}{\numberline {1.4.2}Binary Libraries}{10}{subsection.1.4.2}%
+\contentsline {subsection}{\numberline {1.4.3}Static and Dynamic Libraries}{10}{subsection.1.4.3}%
+\contentsline {section}{\numberline {1.5}Summary Game Development with C++}{12}{section.1.5}%
