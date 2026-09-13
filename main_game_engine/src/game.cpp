@@ -1,6 +1,8 @@
 
 
 #include"game.h"
+
+
 #include <iostream>
 
 
@@ -10,10 +12,10 @@ Game::Game(){
 
     this->m_app_run = false;
     /*
-        intialize "m_app_run" to false initiallu
-        this means when calling the constructor
-        and instating the game, I don't run the game 
-        directly,
+        Intialize "m_app_run" to false 
+        This means when calling the constructor
+        and instating the game, I don't run the game directly
+        
     */
 
 }
@@ -149,15 +151,34 @@ void Game::render(){
 
     */
 
-
     SDL_RenderClear(this->m_renderer);
 
-    // Draw a small rectangle mimcing a player
-    SDL_SetRenderDrawColor(this->m_renderer, 
-    255, 255, 255, 255); // gives white color
 
-    SDL_Rect player = {.x=10,.y=10,.w=20,.h=30};
-    SDL_RenderFillRect(this->m_renderer,&player);
+    // Loading an image in .png format
+    
+    SDL_Surface* surface = IMG_Load("./assets/images/tank-tiger-right.png");
+
+    // creatting texture from the surface
+    SDL_Texture* texture = 
+    SDL_CreateTextureFromSurface(this->m_renderer,surface);
+
+    // Once we create texture from surface, we destroy the surface
+    // since we don't need it aymore
+    SDL_FreeSurface(surface);
+
+    // Preparing the destination rectangle
+    SDL_Rect dest_rect = {.x=10, .y=10 , .w=32, .h=32};
+
+    // Copy texture -> to renderer
+    SDL_RenderCopy(this->m_renderer, // destination
+        texture, // source
+        NULL    , // source rectangle
+        &dest_rect  //destination rectangle
+    );
+
+
+    // Now we free the texture
+    SDL_DestroyTexture(texture);
 
 
     // update the buffer responsible for renderer with suitable operations

@@ -3,6 +3,7 @@
 #pragma once
 
 #include<SDL2/SDL.h>
+#include<SDL2/SDL_image.h>
 
 class Game{
 
@@ -15,6 +16,8 @@ private:
     SDL_DisplayMode m_display_mode;
 
     bool m_app_run;
+
+    
 
 
 public:
